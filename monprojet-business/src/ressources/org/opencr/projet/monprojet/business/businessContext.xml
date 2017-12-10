@@ -4,19 +4,35 @@
        xsi:schemaLocation="
             http://www.springframework.org/schema/beans
             http://www.springframework.org/schema/beans/spring-beans.xsd">
+           
             
-            
-            <bean id="siteManager" class="org.opencr.projet.monprojet.business.impl.manager.SiteManagerImpl"/>
-    <bean id="secteurManager" class="org.opencr.projet.monprojet.business.impl.manager.SecteurManagerImpl"/>
-    <bean id="voieManager" class="org.opencr.projet.monprojet.business.impl.manager.VoieManagerImpl"/>
-    <bean id="longueurManager" class="org.opencr.projet.monprojet.business.impl.manager.LongueurManagerImpl"/>
-    <bean id="topoManager" class="org.opencr.projet.monprojet.business.impl.manager.TopoManagerImpl"/>
-    <bean id="pretManager" class="org.opencr.projet.monprojet.business.impl.manager.PretManagerImpl"/>
-    <bean id="commentaireManager" class="org.opencr.projet.monprojet.business.impl.manager.CommentaireManagerImpl"/>
+     <bean id="siteManager" class="org.opencr.projet.monprojet.business.impl.manager.SiteManagerImpl">
+     	<property name="daoFactory" ref="daoFactory" />
+     </bean>
+     
+    <bean id="secteurManager" class="org.opencr.projet.monprojet.business.impl.manager.SecteurManagerImpl">
+    	<property name="daoFactory" ref="daoFactory" />
+    </bean>
+    <bean id="voieManager" class="org.opencr.projet.monprojet.business.impl.manager.VoieManagerImpl">
+    	<property name="daoFactory" ref="daoFactory" />
+    </bean>
+    <bean id="longueurManager" class="org.opencr.projet.monprojet.business.impl.manager.LongueurManagerImpl">
+    	<property name="daoFactory" ref="daoFactory" />
+    </bean>
+    <bean id="topoManager" class="org.opencr.projet.monprojet.business.impl.manager.TopoManagerImpl">
+    	<property name="daoFactory" ref="daoFactory" />
+    </bean>
+    <bean id="pretManager" class="org.opencr.projet.monprojet.business.impl.manager.PretManagerImpl">
+    	<property name="daoFactory" ref="daoFactory" />
+    </bean>
+    <bean id="commentaireManager" class="org.opencr.projet.monprojet.business.impl.manager.CommentaireManagerImpl">
+    	<property name="daoFactory" ref="daoFactory" />
+    </bean>
+    
     
 
    
-    <bean id="managerFactory" class="org.opencr.projet.monprojet.business.ManagerFactory">
+    <bean id="managerFactory" class="org.opencr.projet.monprojet.business.impl.ManagerFactoryImpl">
         <property name="siteManager" ref="siteManager"/>
         <property name="secteurManager" ref="secteurManager"/>
         <property name="voieManager" ref="voieManager"/>
