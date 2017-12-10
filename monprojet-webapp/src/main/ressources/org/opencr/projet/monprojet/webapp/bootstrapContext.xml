@@ -7,5 +7,6 @@
 
     
     <import resource="classpath:/org/opencr/projet/monprojet/webapp/webappContext.xml" />
-    <import resource="classpath:/org/opencr/projet/monprojet/business/businessContext.xml"
+    <import resource="classpath:/org/opencr/projet/monprojet/business/businessContext.xml"/>
+    <import resource="classpath:/org/opencr/projet/monprojet/consumer/consumerContext.xml" />
 </beans>

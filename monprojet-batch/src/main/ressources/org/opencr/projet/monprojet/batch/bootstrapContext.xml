@@ -7,5 +7,5 @@
 
     
     <import resource="classpath:/org/opencr/projet/monprojet/batch/batchContext.xml" />
-    <import resource="classpath:/org/opencr/projet/monprojet/business/businessContext.xml"
+    <import resource="classpath:/org/opencr/projet/monprojet/business/businessContext.xml"/>
 </beans>
