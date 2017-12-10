@@ -4,15 +4,16 @@
        xsi:schemaLocation="
             http://www.springframework.org/schema/beans
             http://www.springframework.org/schema/beans/spring-beans.xsd">
-
-    
-   <bean id="siteManager" class="org.opencr.projet.monprojet.business.impl.manager.SiteManagerImpl"/>
+            
+            
+            <bean id="siteManager" class="org.opencr.projet.monprojet.business.impl.manager.SiteManagerImpl"/>
     <bean id="secteurManager" class="org.opencr.projet.monprojet.business.impl.manager.SecteurManagerImpl"/>
     <bean id="voieManager" class="org.opencr.projet.monprojet.business.impl.manager.VoieManagerImpl"/>
     <bean id="longueurManager" class="org.opencr.projet.monprojet.business.impl.manager.LongueurManagerImpl"/>
     <bean id="topoManager" class="org.opencr.projet.monprojet.business.impl.manager.TopoManagerImpl"/>
     <bean id="pretManager" class="org.opencr.projet.monprojet.business.impl.manager.PretManagerImpl"/>
     <bean id="commentaireManager" class="org.opencr.projet.monprojet.business.impl.manager.CommentaireManagerImpl"/>
+    
 
    
     <bean id="managerFactory" class="org.opencr.projet.monprojet.business.ManagerFactory">
@@ -24,6 +25,5 @@
         <property name="pretManager" ref="pretManager"/>
         <property name="commentaireManager" ref="commentaireManager"/>
     </bean>
-
-   
-</beans>
+            
+            </beans>
