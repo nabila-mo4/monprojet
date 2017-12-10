@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns="http://www.springframework.org/schema/beans"
+       xsi:schemaLocation="
+            http://www.springframework.org/schema/beans
+            http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    
+    <bean id="siteDao" class="org.opencr.projet.monprojet.consumer.impl.dao.SiteDaoImpl"/>
+    <bean id="secteurDao" class="org.opencr.projet.monprojet.consumer.impl.dao.SecteurDaoImpl"/>
+    <bean id="voieDao" class="org.opencr.projet.monprojet.consumer.impl.dao.VoieDaoImpl"/>
+    <bean id="longueurDao" class="org.opencr.projet.monprojet.consumer.impl.dao.LongueurDaoImpl"/>
+    <bean id="topoDao" class="org.opencr.projet.monprojet.consumer.impl.dao.TopoDaoImpl"/>
+    <bean id="pretDao" class="org.opencr.projet.monprojet.consumer.impl.dao.PretDaoImpl"/>
+    <bean id="commentaireDao" class="org.opencr.projet.monprojet.consumer.impl.dao.CommentaireDaoImpl"/>
+    
+
+    
+    <bean id="daoFactory" class="org.opencr.projet.monprojet.business.impl.DaoFactory">
+        <property name="siteDao" ref="siteDao"/>
+        <property name="secteurDao" ref="secteurDao"/>
+        <property name="voieDao" ref="voieDao"/>
+        <property name="longueurDao" ref="longueurDao"/>
+        <property name="topoDao" ref="topoDao"/>
+        <property name="pretDao" ref="pretDao"/>
+        <property name="commentaireDao" ref="commentaireDao"/>
+        
+    </bean>
+</beans>

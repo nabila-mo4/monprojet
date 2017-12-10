@@ -6,6 +6,6 @@
             http://www.springframework.org/schema/beans/spring-beans.xsd">
 
     
-    <import resource="classpath:/applicationContext.xml" />
+    <import resource="classpath:/org/opencr/projet/monprojet/batch/batchContext.xml" />
     <import resource="classpath:/org/opencr/projet/monprojet/business/businessContext.xml"
 </beans>
