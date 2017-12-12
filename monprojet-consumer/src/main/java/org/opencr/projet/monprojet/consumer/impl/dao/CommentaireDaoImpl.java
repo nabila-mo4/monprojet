@@ -1,5 +1,7 @@
 package org.opencr.projet.monprojet.consumer.impl.dao;
 
-public class CommentaireDaoImpl {
+import org.opencr.projet.monprojet.consumer.contract.dao.CommentaireDao;
+
+public class CommentaireDaoImpl extends AbstractDaoImpl implements CommentaireDao {
 
 }

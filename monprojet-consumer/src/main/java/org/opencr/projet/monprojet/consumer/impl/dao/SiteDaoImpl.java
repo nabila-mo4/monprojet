@@ -1,5 +1,7 @@
 package org.opencr.projet.monprojet.consumer.impl.dao;
 
-public class SiteDaoImpl {
+import org.opencr.projet.monprojet.consumer.contract.dao.SiteDao;
+
+public class SiteDaoImpl extends AbstractDaoImpl implements SiteDao {
 
 }

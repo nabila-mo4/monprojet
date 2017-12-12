@@ -1,8 +1,13 @@
 package org.opencr.projet.monprojet.consumer.impl.dao;
 
+import javax.inject.Inject;
+import javax.inject.Named;
 import javax.sql.DataSource;
 
 public class AbstractDaoImpl {
+	
+	@Inject
+    @Named("dataSourceEscalade")
 	
 	private DataSource dataSource;
 

@@ -1,5 +1,7 @@
 package org.opencr.projet.monprojet.consumer.impl.dao;
 
-public class SecteurDaoImpl {
+import org.opencr.projet.monprojet.consumer.contract.dao.SecteurDao;
+
+public class SecteurDaoImpl extends AbstractDaoImpl implements SecteurDao {
 
 }

@@ -1,5 +1,7 @@
 package org.opencr.projet.monprojet.consumer.impl.dao;
 
-public class TopoDaoImpl {
+import org.opencr.projet.monprojet.consumer.contract.dao.TopoDao;
+
+public class TopoDaoImpl extends AbstractDaoImpl implements TopoDao{
 
 }

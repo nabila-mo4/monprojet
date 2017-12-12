@@ -3,5 +3,8 @@
 	<classpathentry kind="src" path="monprojet-consumer/src/main/java"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
 	<classpathentry kind="var" path="M2_REPO/junit/junit/3.8.1/junit-3.8.1.jar"/>
+	<classpathentry kind="lib" path="pom.xml"/>
+	<classpathentry kind="lib" path="monprojet-technical/pom.xml"/>
+	<classpathentry kind="lib" path="C:/Users/nmokadmi/Downloads/javax-inject.jar/javax-inject.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>
