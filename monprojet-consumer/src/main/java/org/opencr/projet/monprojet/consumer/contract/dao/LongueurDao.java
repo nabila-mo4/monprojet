@@ -1,5 +1,13 @@
 package org.opencr.projet.monprojet.consumer.contract.dao;
 
-public interface LongueurDao {
+import org.opencr.projet.monprojet.model.Longueur;
 
+public interface LongueurDao {
+	
+	void create(Longueur Longueur);
+    
+    void delete(int id);
+    
+    Longueur getById(int id);
+   
 }

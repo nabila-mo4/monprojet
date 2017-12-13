@@ -4,11 +4,12 @@
        xsi:schemaLocation="
             http://www.springframework.org/schema/beans
             http://www.springframework.org/schema/beans/spring-beans.xsd">
+            
+            
+     <bean id="dataSourceEscalade" class="org.springframework.jndi.JndiObjectFactoryBean">
+   		 <property name="jndiName" value="java:comp/env/jdbc/escalade"/>
+     </bean>
 
-    
-    
-
-   
     <bean class="org.springframework.beans.factory.config.MethodInvokingFactoryBean">
         <property name="targetClass" value="org.opencr.projet.monprojet.webapp.rest.resource.AbstractResource"/>
         <property name="targetMethod" value="setManagerFactory"/>

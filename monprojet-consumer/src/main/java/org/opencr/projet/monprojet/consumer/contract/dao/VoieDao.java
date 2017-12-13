@@ -1,5 +1,13 @@
 package org.opencr.projet.monprojet.consumer.contract.dao;
 
-public interface VoieDao {
+import org.opencr.projet.monprojet.model.Voie;
 
+public interface VoieDao {
+	
+	void create(Voie Voie);
+    
+    void delete(int id);
+    
+    Voie getById(int id);
+   
 }

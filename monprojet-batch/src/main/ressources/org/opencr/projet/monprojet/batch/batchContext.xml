@@ -4,6 +4,19 @@
        xsi:schemaLocation="
             http://www.springframework.org/schema/beans
             http://www.springframework.org/schema/beans/spring-beans.xsd">
+            
+    <bean id="dataSourceEscaladeConfiguration" class="org.springframework.beans.factory.config.PropertiesFactoryBean">
+        <property name="location" value="file:${application.home}/conf/escalade.properties"/>
+    </bean>
+
+    
+    <bean id="dataSourceEscalade"
+          class="org.apache.commons.dbcp2.BasicDataSourceFactory"
+          factory-method="createDataSource"
+          destroy-method="close">
+        <constructor-arg ref="dataSourceEscaladeConfiguration"/>
+    </bean>
+</beans>
 
     
    
