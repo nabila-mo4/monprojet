@@ -1,0 +1,63 @@
+<?xml version="1.0"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>org.opencr.projet</groupId>
+  <artifactId>monprojet</artifactId>
+  <version>1.0-SNAPSHOT</version>
+  <packaging>jar</packaging>
+
+  <name>monprojet</name>
+  <url>http://maven.apache.org</url>
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <spring.version>4.3.11.RELEASE</spring.version>
+  </properties>
+
+  <modules>
+        <module>monprojet-batch</module>
+        <module>monprojet-webapp</module>
+        <module>monprojet-business</module>
+        <module>monprojet-consumer</module>
+        <module>monprojet-model</module>
+    </modules>
+    
+     <dependencyManagement>
+        <dependencies>
+            
+            <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-framework-bom</artifactId>
+                <version>${spring.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+            
+            
+			<dependency>
+			    <groupId>javax.annotation</groupId>
+			    <artifactId>javax.annotation-api</artifactId>
+			    <version>1.2</version>
+			</dependency>
+		
+			<dependency>
+			    <groupId>javax.inject</groupId>
+			    <artifactId>javax.inject</artifactId>
+			    <version>1</version>
+			</dependency>
+			
+			<dependency>
+                <groupId>org.postgresql</groupId>
+                <artifactId>postgresql</artifactId>
+                <version>10.1</version>
+                <scope>runtime</scope>
+            </dependency>
+            
+            
+        </dependencies>
+        
+        
+    </dependencyManagement>
+</project>

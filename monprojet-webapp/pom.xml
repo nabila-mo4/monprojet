@@ -14,7 +14,7 @@
 
     
     <artifactId>monprojet-webapp</artifactId>
-    <packaging>war</packaging>
+    <packaging>pom</packaging>
 
    
     <name>${projectName} - Application web</name>

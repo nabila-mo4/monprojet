@@ -6,11 +6,12 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 	<title>Création de la longueur</title>
-	<link type="text/css" rel="stylesheet" href="<c:url value="/style/bootstrap.css"></c:url>" />
-	<link type="text/css" rel="stylesheet" href="<c:url value="/style/style.css"></c:url>" />
+	<link type="text/css" rel="stylesheet" href="<c:url value="/css/bootstrap.css"></c:url>" />
+	<link type="text/css" rel="stylesheet" href="<c:url value="/css/ajoutstyle.css"></c:url>" />
 	
 </head>
 <body>
+<c:import url="/menu.jsp"></c:import>
      
      <div class="container">
     	<div class="row">
@@ -26,7 +27,7 @@
 						<div class="row">
 							<div class="col-lg-12">
      	
-					     		<form method="post" action="<c:url value="/creationLongueur"/>"
+					     		<form method="post" action="<c:url value="/saveLongueur"/>"
 					     		enctype="multipart/form-data"
 					            role="form" style="display: block;">
 					       			<div class="form-group">
@@ -59,8 +60,8 @@
 	    </div>
 	  </div>
 
-        <script src="<c:url value="/style/jquery-3.2.1.min.js"></c:url>"> </script>
-		<script src="<c:url value="/style/bootstrap.min.js"> </c:url>"> </script>
+        <script src="<c:url value="/js/jquery-2.1.1.min.js"></c:url>"> </script>
+		<script src="<c:url value="/js/bootstrap.min.js"> </c:url>"> </script>
     </body>
 </html>
 

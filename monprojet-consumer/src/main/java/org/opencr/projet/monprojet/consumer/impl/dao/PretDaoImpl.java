@@ -3,6 +3,7 @@ package org.opencr.projet.monprojet.consumer.impl.dao;
 import java.sql.Types;
 
 import javax.inject.Inject;
+import javax.inject.Named;
 
 import org.opencr.projet.monprojet.consumer.contract.dao.PretDao;
 import org.opencr.projet.monprojet.model.Pret;

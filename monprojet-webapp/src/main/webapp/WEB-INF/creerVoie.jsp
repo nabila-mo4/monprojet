@@ -1,17 +1,17 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!DOCTYPE html>
 <html>
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 	<title>Création de la voie</title>
-	<link type="text/css" rel="stylesheet" href="<c:url value="/style/bootstrap.css"></c:url>" />
-	<link type="text/css" rel="stylesheet" href="<c:url value="/style/style.css"></c:url>" />
+	<link type="text/css" rel="stylesheet" href="<c:url value="/css/bootstrap.css"></c:url>" />
+	<link type="text/css" rel="stylesheet" href="<c:url value="/css/ajoutstyle.css"></c:url>" />
 	
 </head>
 <body>
-     
+     <c:import url="/menu.jsp"></c:import>
      <div class="container">
     	<div class="row">
 			<div class="col-md-12 ">
@@ -26,7 +26,7 @@
 						<div class="row">
 							<div class="col-lg-12">
      	
-					     		<form method="post" action="<c:url value="/creationVoie"/>"
+					     		<form method="post" action="<c:url value="/saveVoie"/>"
 					     		enctype="multipart/form-data"
 					            role="form" style="display: block;">
 					       			<div class="form-group">
@@ -63,8 +63,8 @@
 	    </div>
 	  </div>
 
-        <script src="<c:url value="/style/jquery-3.2.1.min.js"></c:url>"> </script>
-		<script src="<c:url value="/style/bootstrap.min.js"> </c:url>"> </script>
+        <script src="<c:url value="/js/jquery-2.1.1.min.js"></c:url>"> </script>
+		<script src="<c:url value="/js/bootstrap.min.js"> </c:url>"> </script>
     </body>
 </html>
 
